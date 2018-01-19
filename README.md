@@ -1,4 +1,4 @@
-# Bello ![Travis](https://travis-ci.org/akagr/bello-react.svg?branch=master)
+# Bello [![Build Status](https://travis-ci.org/akagr/bello-react.svg?branch=master)](https://travis-ci.org/akagr/bello-react)
 
 Bello is a (in-development) lite trello clone written in react 💯. Some notable libraries it uses are:
 
