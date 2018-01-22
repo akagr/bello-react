@@ -6,8 +6,9 @@
   "author": "Akash Agrawal <akagr@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel index.html",
-    "test": "jest"
+    "start": "parcel -o index.html",
+    "test": "jest",
+    "build": "parcel build index.html"
   },
   "jest": {
     "transform": {
@@ -25,10 +26,14 @@
     ]
   },
   "dependencies": {
+    "@types/lodash": "^4.14.93",
     "@types/react": "^16.0.34",
     "@types/react-dom": "^16.0.3",
+    "@types/react-router-dom": "^4.2.3",
+    "lodash": "^4.17.4",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "@types/enzyme": "^3.1.6",
