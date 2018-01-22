@@ -6,13 +6,16 @@
   "author": "Akash Agrawal <akagr@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel -o index.html",
+    "start": "parcel index.html",
     "test": "jest",
     "build": "parcel build index.html"
   },
   "jest": {
     "transform": {
       "^.+\\.(j|t)sx?$": "ts-jest"
+    },
+    "moduleNameMapper": {
+      "\\.(css|less|scss)$": "identity-obj-proxy"
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
     "setupTestFrameworkScriptFile": "<rootDir>src/setup-tests.js",
@@ -40,8 +43,11 @@
     "@types/jest": "^22.0.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^22.1.4",
+    "node-sass": "^4.7.2",
     "parcel-bundler": "^1.4.1",
+    "postcss-modules": "^1.1.0",
     "ts-jest": "^22.0.1",
     "typescript": "^2.6.2"
   }

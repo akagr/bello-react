@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+const styles = require('./board-tile.scss');
+
 interface Props {
   board: Board;
 }
@@ -25,7 +27,7 @@ export class BoardTile extends Component<Props, any> {
   }
 
   render() {
-    return <Link to={`/${this.props.board.id}`}>
+    return <Link className={styles.BoardTile} to={`/${this.props.board.id}`}>
       {this.props.board.title}
     </Link>;
   }
